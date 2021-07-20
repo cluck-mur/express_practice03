@@ -2,24 +2,60 @@
     <html lang="ja">
 
     <head>
-        <title>予約状況　日付別24時間表</title>
+        <title>会議室予約　マイページ</title>
         <link rel='stylesheet' href='./style.css' />
     </head>
 
     <body>
         博多次郎 様 ログイン中 <a href="dummy">マイページ</a> <a href="dummy">ログアウト</a><br/>
         <div style="padding-top: 18pt;padding-bottom: 4pt;">
-            <span style="font-size: 18pt;font-weight: bold;">予約状況 日付別(24時間表)</span>&nbsp;
-            <a href="dummy">部屋別ページへ</a>
+            <a href="dummy">新規予約ページへ</a>&nbsp;
+            <a href="dummy">アカウント情報確認／変更へ</a>&nbsp;
+            <a href="dummy">パスワード変更へ</a><br/>
+            <span style="font-size: 18pt;font-weight: bold;">マイページ</span><br/>
         </div><br/>
-        <form method="POST" action="dummy">
-            <input type="date" name="date" value="2021-07-19" required pattern="\d{4}-\d{2}-\d{2}"></input>
-            <br/>
-            <input type="radio" name="hourstype" value="12hours">12時間表</input>
-            <input type="radio" name="hourstype" value="24hours" checked>24時間表</input>
-            <input type="submit" value="変更">
-        </form>
+        <div style="padding-top: 18pt;padding-bottom: 4pt;">
+            <span style="font-size: 12pt;font-weight: bold;">予約リスト</span>
+        </div><br/>
+        販売戦略会議<br/>
+        第一会議室&nbsp;2021年07月19日
         <br />
+        <div style="margin:0px;padding:0px;" align="center">
+            <table width="98%"
+                style="border-collapse: collapse;border:1px solid #000000;background-color:#FFFFFF;color:#000000;text-align:left;">
+                <tbody>
+                    <tr>
+                        <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
+                            開始時刻</th>
+                        <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
+                            会議室</th>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid #000000;text-align:center;">10:00</td>
+                        <td style="border:1px solid #000000;text-align:left;">第一会議室</td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid #000000;text-align:center;">10:30</td>
+                        <td style="border:1px solid #000000;text-align:left;">第一会議室</td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid #000000;text-align:center;">11:00</td>
+                        <td style="border:1px solid #000000;text-align:left;">第一会議室</td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid #000000;text-align:center;">11:30</td>
+                        <td style="border:1px solid #000000;text-align:left;">第一会議室</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+
+
+
         <form method="POST" action="dummy">
         <div style="margin:0px;padding:0px;" align="center">
             <table width="98%"
@@ -309,274 +345,10 @@
                         <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
                         <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
                     </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">20:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">20:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">21:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">21:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">22:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br/>(福岡太郎)</a></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">22:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br/>(福岡太郎)</a></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">23:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br/>(福岡太郎)</a></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">23:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br/>(福岡太郎)</a></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">00:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">00:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">01:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">01:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">02:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">02:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">03:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">03:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">04:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">04:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">05:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">05:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">06:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">06:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">07:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">07:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
                 </tbody>
             </table>
         </div>
-        <input type="submit" value="上記の時間を予約">
+        <input type="submit" value="チェックしたコマを予約する">
     </form>
     </body>
 

@@ -1,319 +1,358 @@
 <!DOCTYPE html>
-    <html lang="ja">
+<html lang="ja">
 
-    <head>
-        <title>予約状況　日付別12時間表</title>
-        <link rel='stylesheet' href='./style.css' />
-    </head>
+<head>
+    <title>新規予約　日付／会議室選択　12時間表</title>
+    <link rel='stylesheet' href='./style.css' />
+</head>
 
-    <body>
-        博多次郎 様 ログイン中 <a href="dummy">マイページ</a> <a href="dummy">ログアウト</a><br/>
-        <div style="padding-top: 18pt;padding-bottom: 4pt;">
-            <span style="font-size: 18pt;font-weight: bold;">新規予約 日付別(12時間表)</span>&nbsp;
-            <a href="dummy">部屋別ページへ</a>
-        </div><br/>
+<body>
+    博多次郎 様 ログイン中 <a href="dummy">マイページ</a> <a href="dummy">ログアウト</a><br />
+    <div style="padding-top: 18pt;padding-bottom: 4pt;">
         <form method="POST" action="dummy">
-            <input type="date" name="date" value="2021-07-19" required pattern="\d{4}-\d{2}-\d{2}"></input>
-            <br/>
-            <input type="radio" name="hourstype" value="12hours" checked>12時間表</input>
-            <input type="radio" name="hourstype" value="24hours">24時間表</input>
-            <input type="submit" value="変更">
+            <span style="font-size: 18pt;font-weight: bold;">新規予約&nbsp;日付／会議室選択&nbsp;(12時間表)</span>&nbsp;
+            <input type="hidden" name="hourstype" value="2"></input>
+            <input type="submit" value="24時間表に変更">
         </form>
-        <br />
-        <form method="POST" action="dummy">
-        <div style="margin:0px;padding:0px;" align="center">
-            <table width="98%"
-                style="border-collapse: collapse;border:1px solid #000000;background-color:#FFFFFF;color:#000000;text-align:left;">
-                <tbody>
-                    <tr>
-                        <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
-                            開始時刻</th>
-                        <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
-                            第一会議室</th>
-                        <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
-                            第二会議室</th>
-                        <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
-                            第三会議室</th>
-                        <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
-                            第四会議室</th>
-                        <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
-                            第五会議室</th>
-                        <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
-                            第六会議室</th>
-                        <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
-                            第七会議室</th>
-                        <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
-                            第八会議室</th>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">08:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">08:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">09:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">09:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">10:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br/>(福岡太郎)</a></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">10:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br/>(福岡太郎)</a></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">11:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br/>(福岡太郎)</a></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">11:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br/>(福岡太郎)</a></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">12:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">12:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">13:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">13:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">14:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">14:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">15:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">15:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">16:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">16:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">17:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">17:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">18:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">18:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">19:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                    <tr>
-                        <td style="border:1px solid #000000;text-align:center;">19:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                        <td style="border:1px solid #000000;text-align:left;"><input type="checkbox" name="01-01">予約可能</input></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <input type="submit" value="チェックしたコマを予約する">
-    </form>
-    </body>
+    </div>
 
-    </html>
+    <form method="POST" action="dummy">
+        <input type="date" name="date" value="2021-07-19" required pattern="\d{4}-\d{2}-\d{2}"></input>
+        <input type="submit" value="日付変更">
+    </form>
+
+    <br />
+    <div style="margin:0px;padding:0px;" align="center">
+        <table width="98%"
+            style="border-collapse: collapse;border:1px solid #000000;background-color:#FFFFFF;color:#000000;text-align:left;">
+            <tbody>
+                <tr>
+                    <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
+                        開始時刻</th>
+                    <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
+                        <div>第一会議室</div>
+                        <form method="POST" action="dummy">
+                            <input type="hidden" name="room_id" value="1">
+                            <input type="submit" value="予約">
+                        </form>
+                    </th>
+                    <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
+                        <div>第二会議室</div>
+                        <form method="POST" action="dummy">
+                            <input type="hidden" name="room_id" value="2">
+                            <input type="submit" value="予約">
+                        </form>
+                    </th>
+                    <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
+                        <div>第三会議室</div>
+                        <form method="POST" action="dummy">
+                            <input type="hidden" name="room_id" value="3">
+                            <input type="submit" value="予約">
+                        </form>
+                    </th>
+                    <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
+                        <div>第四会議室</div>
+                        <form method="POST" action="dummy">
+                            <input type="hidden" name="room_id" value="4">
+                            <input type="submit" value="予約">
+                        </form>
+                    </th>
+                    <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
+                        <div>第五会議室</div>
+                        <form method="POST" action="dummy">
+                            <input type="hidden" name="room_id" value="5">
+                            <input type="submit" value="予約">
+                        </form>
+                    </th>
+                    <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
+                        <div>第六会議室</div>
+                        <form method="POST" action="dummy">
+                            <input type="hidden" name="room_id" value="6">
+                            <input type="submit" value="予約">
+                        </form>
+                    </th>
+                    <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
+                        <div>第七会議室</div>
+                        <form method="POST" action="dummy">
+                            <input type="hidden" name="room_id" value="7">
+                            <input type="submit" value="予約">
+                        </form>
+                    </th>
+                    <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
+                        <div>第八会議室</div>
+                        <form method="POST" action="dummy">
+                            <input type="hidden" name="room_id" value="8">
+                            <input type="submit" value="予約">
+                        </form>
+                    </th>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">08:00</td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">08:30</td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">09:00</td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">09:30</td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">10:00</td>
+                    <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br />(福岡太郎)</a></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">10:30</td>
+                    <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br />(福岡太郎)</a></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">11:00</td>
+                    <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br />(福岡太郎)</a></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">11:30</td>
+                    <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br />(福岡太郎)</a></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">12:00</td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">12:30</td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">13:00</td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">13:30</td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">14:00</td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">14:30</td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">15:00</td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">15:30</td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">16:00</td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">16:30</td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">17:00</td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">17:30</td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">18:00</td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">18:30</td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">19:00</td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid #000000;text-align:center;">19:30</td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                    <td style="border:1px solid #000000;text-align:left;"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

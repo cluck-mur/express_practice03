@@ -2,19 +2,20 @@
 <html lang="ja">
 
 <head>
-    <title>新規予約　日付／会議室選択　24時間表</title>
+    <title>予約状況　日付別24時間表</title>
     <link rel='stylesheet' href='./style.css' />
 </head>
 
 <body>
     博多次郎 様 ログイン中 <a href="dummy">マイページ</a> <a href="dummy">ログアウト</a><br />
     <div style="padding-top: 18pt;padding-bottom: 4pt;">
-        <form method="POST" action="dummy">
-            <span style="font-size: 18pt;font-weight: bold;">新規予約&nbsp;日付／会議室選択&nbsp;(24時間表)</span>&nbsp;
-            <input type="hidden" name="hourstype" value="1"></input>
-            <input type="submit" value="12時間表に変更">
-        </form>
-    </div>
+        <span style="font-size: 18pt;font-weight: bold;">新規予約&nbsp;日付／会議室選択&nbsp;(24時間表)</span>&nbsp;
+    </div><br />
+    <form method="POST" action="dummy">
+        <input type="radio" name="hourstype" value="12hours">12時間表</input>
+        <input type="radio" name="hourstype" value="24hours" checked>24時間表</input>
+        <input type="submit" value="表変更">
+    </form>
 
     <form method="POST" action="dummy">
         <input type="date" name="date" value="2021-07-19" required pattern="\d{4}-\d{2}-\d{2}"></input>

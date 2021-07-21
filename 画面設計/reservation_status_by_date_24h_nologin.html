@@ -10,17 +10,19 @@
         ゲスト 様 ようこそ <a href="dummy">ログイン</a> <a href="dummy">新規登録</a><br/>
         予約を開始するにはログインしてください。
         <div style="padding-top: 18pt;padding-bottom: 4pt;">
-            <span style="font-size: 18pt;font-weight: bold;">予約状況 日付別(24時間表)</span>&nbsp;
-            <a href="dummy">部屋別ページへ</a>
-        </div><br/>
+            <form method="POST" action="dummy">
+                <span style="font-size: 18pt;font-weight: bold;">予約状況&nbsp;(24時間表)</span>&nbsp;
+                <input type="hidden" name="hourstype" value="1"></input>
+                <input type="submit" value="12時間表に変更">
+            </form>
+        </div>
+
         <form method="POST" action="dummy">
             <input type="date" name="date" value="2021-07-19" required pattern="\d{4}-\d{2}-\d{2}"></input>
-            <br/>
-            <input type="radio" name="hourstype" value="12hours">12時間表</input>
-            <input type="radio" name="hourstype" value="24hours" checked>24時間表</input>
-            <input type="submit" value="変更">
-        </form>
+            <input type="submit" value="日付変更">
+        </form>        
         <br />
+
         <form method="POST" action="dummy">
         <div style="margin:0px;padding:0px;" align="center">
             <table width="98%"

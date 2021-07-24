@@ -28,41 +28,51 @@
     <input type="hidden" name="meeting-code" value="1" form="room07-form">
     <input type="hidden" name="meeting-code" value="1" form="room08-form">
 
-    <div>
-        <label for="resurved-date">予約日付</label>
-        <span style="font-size: 14pt; font-weight: bold;">2021-07-19&nbsp;</span>
-        <input type="hidden" name="resurved-date" value="2021-07-19" form="nochange-form"></input>
-    </div>
-    <input type="hidden" name="resurved-date" value="2021-07-19" form="room01-form"></input>
-    <input type="hidden" name="resurved-date" value="2021-07-19" form="room02-form"></input>
-    <input type="hidden" name="resurved-date" value="2021-07-19" form="room03-form"></input>
-    <input type="hidden" name="resurved-date" value="2021-07-19" form="room04-form"></input>
-    <input type="hidden" name="resurved-date" value="2021-07-19" form="room05-form"></input>
-    <input type="hidden" name="resurved-date" value="2021-07-19" form="room06-form"></input>
-    <input type="hidden" name="resurved-date" value="2021-07-19" form="room07-form"></input>
-    <input type="hidden" name="resurved-date" value="2021-07-19" form="room08-form"></input>
-    <div>
-        <label for="resurved-room">予約会議室</label>
-        <span style="font-size: 14pt; font-weight: bold;">第一会議室&nbsp;</span>
-        <input type="hidden" name="resurved-room" value="1" form="nochange-form"></input>
-    </div>
-    <input type="hidden" name="resurved-room" value="1" form="room01-form"></input>
-    <input type="hidden" name="resurved-room" value="1" form="room02-form"></input>
-    <input type="hidden" name="resurved-room" value="1" form="room03-form"></input>
-    <input type="hidden" name="resurved-room" value="1" form="room04-form"></input>
-    <input type="hidden" name="resurved-room" value="1" form="room05-form"></input>
-    <input type="hidden" name="resurved-room" value="1" form="room06-form"></input>
-    <input type="hidden" name="resurved-room" value="1" form="room07-form"></input>
-    <input type="hidden" name="resurved-room" value="1" form="room08-form"></input>
+    <table>
+        <tr>
+            <td style="width: auto; white-space: nowrap;">
+                <label for="resurved-date">予約日付</label>
+            </td>
+            <td>
+                <span style="font-size: 14pt; font-weight: bold;">2021-07-19&nbsp;</span>
+                <input type="hidden" name="resurved-date" value="2021-07-19" form="nochange-form"></input>
+                <input type="hidden" name="resurved-date" value="2021-07-19" form="room01-form"></input>
+                <input type="hidden" name="resurved-date" value="2021-07-19" form="room02-form"></input>
+                <input type="hidden" name="resurved-date" value="2021-07-19" form="room03-form"></input>
+                <input type="hidden" name="resurved-date" value="2021-07-19" form="room04-form"></input>
+                <input type="hidden" name="resurved-date" value="2021-07-19" form="room05-form"></input>
+                <input type="hidden" name="resurved-date" value="2021-07-19" form="room06-form"></input>
+                <input type="hidden" name="resurved-date" value="2021-07-19" form="room07-form"></input>
+                <input type="hidden" name="resurved-date" value="2021-07-19" form="room08-form"></input>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: auto; white-space: nowrap;">
+                <label for="resurved-room">予約会議室</label>
+            </td>
+            <td>
+                <span style="font-size: 14pt; font-weight: bold;">第一会議室&nbsp;</span>
+                <input type="hidden" name="resurved-room" value="1" form="nochange-form"></input>
+                <input type="hidden" name="resurved-room" value="1" form="room01-form"></input>
+                <input type="hidden" name="resurved-room" value="1" form="room02-form"></input>
+                <input type="hidden" name="resurved-room" value="1" form="room03-form"></input>
+                <input type="hidden" name="resurved-room" value="1" form="room04-form"></input>
+                <input type="hidden" name="resurved-room" value="1" form="room05-form"></input>
+                <input type="hidden" name="resurved-room" value="1" form="room06-form"></input>
+                <input type="hidden" name="resurved-room" value="1" form="room07-form"></input>
+                <input type="hidden" name="resurved-room" value="1" form="room08-form"></input>
+            </td>
+        </tr>
+    </table>
     <form method="POST" action="dummy" id="nochange-form">
         <input type="submit" value="このまま次へ"></input>
     </form>
-    <br/>
-    <br/>
+    <br />
+    <br />
     <div>
         日付／会議室を変更する場合は以下を入力してください。
     </div>
-    <br/>
+    <br />
     <form method="POST" action="dummy">
         <input type="date" name="date" value="2021-07-19" required pattern="\d{4}-\d{2}-\d{2}"></input>
         <input type="submit" value="日付変更">
@@ -82,7 +92,8 @@
             style="border-collapse: collapse;border:1px solid #000000;background-color:#FFFFFF;color:#000000;text-align:left;">
             <tbody>
                 <tr>
-                    <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
+                    <th
+                        style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;width: 10pt; white-space: nowrap;">
                         開始時刻</th>
                     <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
                         <div>第一会議室</div>

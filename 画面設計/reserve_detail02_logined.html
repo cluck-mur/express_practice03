@@ -12,34 +12,53 @@
         <span style="font-size: 18pt;font-weight: bold;">新規予約&nbsp;会議名入力</span>&nbsp;
     </div>
 
-    <div>
-        <label for="date">日付</label>
-        <span style="font-size: 14pt; font-weight: bold;">2021-07-19&nbsp;</span>
-        <input type="hidden" name="date" value="2021-07-19" form="detail-form"></input>
-    </div>
-    <div>
-        <label for="room">会議室</label>
-        <span style="font-size: 14pt; font-weight: bold;">第一会議室&nbsp;</span>
-        <input type="hidden" name="room" value="1" form="detail-form"></input>
-    </div>
-    <div>
-        <label for="koma01">コマ</label>
-        <span style="font-size: 14pt; font-weight: bold;">4コマ&nbsp;(10:00-10:30, 10:30-11:00, 11:00-11:30, 11:30-12:00)&nbsp;</span>
-        <input type="hidden" name="koma01" value="5" form="detail-form"></input>
-        <input type="hidden" name="koma02" value="6" form="detail-form"></input>
-        <input type="hidden" name="koma03" value="7" form="detail-form"></input>
-        <input type="hidden" name="koma04" value="8" form="detail-form"></input>
-    </div>
-    <br/>
-    <div>
-        <label for="meeting-name">会議名</label>
-        <input type="text" name="meeting-name" form="detail-form"></input>
-    </div>
-    <br/>
+    <table>
+        <tr>
+            <td style="width: auto; white-space: nowrap;">
+                <label for="date">日付</label>
+            </td>
+            <td>
+                <span style="font-size: 14pt; font-weight: bold;">2021-07-19&nbsp;</span>
+                <input type="hidden" name="date" value="2021-07-19" form="detail-form"></input>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: auto; white-space: nowrap;">
+                <label for="room">会議室</label>
+            </td>
+            <td>
+                <span style="font-size: 14pt; font-weight: bold;">第一会議室&nbsp;</span>
+                <input type="hidden" name="room" value="1" form="detail-form"></input>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: auto; white-space: nowrap;">
+                <label for="koma01">コマ</label>
+            </td>
+            <td>
+                <span style="font-size: 14pt; font-weight: bold;">4コマ&nbsp;(10:00-10:30, 10:30-11:00, 11:00-11:30,
+                    11:30-12:00)&nbsp;</span>
+                <input type="hidden" name="koma01" value="5" form="detail-form"></input>
+                <input type="hidden" name="koma02" value="6" form="detail-form"></input>
+                <input type="hidden" name="koma03" value="7" form="detail-form"></input>
+                <input type="hidden" name="koma04" value="8" form="detail-form"></input>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: auto; white-space: nowrap;">
+                <label for="meeting-name">会議名</label>
+            </td>
+            <td>
+                <input type="text" name="meeting-name" placeholder="会議名を入力してください" form="detail-form"></input>
+            </td>
+        </tr>
+    </table>
+    <br />
     <form method="POST" action="dummy" id="detail-form">
         <input type="submit" value="次へ">
         <input type="button" onclick="history.back()" value="戻る">
     </form>
+    </tabel>
 </body>
 
 </html>

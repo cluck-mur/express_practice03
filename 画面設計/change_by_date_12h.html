@@ -2,20 +2,67 @@
 <html lang="ja">
 
 <head>
-    <title>新規予約　日付／会議室選択　12時間表</title>
+    <title>予約修正　日付／会議室選択　12時間表</title>
     <link rel='stylesheet' href='./style.css' />
 </head>
 
 <body>
     博多次郎 様 ログイン中 <a href="dummy">マイページ</a> <a href="dummy">ログアウト</a><br />
     <div style="padding-top: 18pt;padding-bottom: 4pt;">
-        <form method="POST" action="dummy">
-            <span style="font-size: 18pt;font-weight: bold;">新規予約&nbsp;日付／会議室選択&nbsp;(12時間表)</span>&nbsp;
+        <form method="POST" action="dummy" id="hours-form">
+            <span style="font-size: 18pt;font-weight: bold;">予約修正&nbsp;日付／会議室選択&nbsp;(12時間表)</span>&nbsp;
             <input type="hidden" name="hourstype" value="2"></input>
             <input type="submit" value="24時間表に変更">
         </form>
     </div>
 
+    <input type="hidden" name="meeting-code" value="1" form="hours-form">
+
+    <input type="hidden" name="meeting-code" value="1" form="nochange-form">
+    <input type="hidden" name="meeting-code" value="1" form="room01-form">
+    <input type="hidden" name="meeting-code" value="1" form="room02-form">
+    <input type="hidden" name="meeting-code" value="1" form="room03-form">
+    <input type="hidden" name="meeting-code" value="1" form="room04-form">
+    <input type="hidden" name="meeting-code" value="1" form="room05-form">
+    <input type="hidden" name="meeting-code" value="1" form="room06-form">
+    <input type="hidden" name="meeting-code" value="1" form="room07-form">
+    <input type="hidden" name="meeting-code" value="1" form="room08-form">
+
+    <div>
+        <label for="resurved-date">予約日付</label>
+        <span style="font-size: 14pt; font-weight: bold;">2021-07-19&nbsp;</span>
+        <input type="hidden" name="resurved-date" value="2021-07-19" form="nochange-form"></input>
+    </div>
+    <input type="hidden" name="resurved-date" value="2021-07-19" form="room01-form"></input>
+    <input type="hidden" name="resurved-date" value="2021-07-19" form="room02-form"></input>
+    <input type="hidden" name="resurved-date" value="2021-07-19" form="room03-form"></input>
+    <input type="hidden" name="resurved-date" value="2021-07-19" form="room04-form"></input>
+    <input type="hidden" name="resurved-date" value="2021-07-19" form="room05-form"></input>
+    <input type="hidden" name="resurved-date" value="2021-07-19" form="room06-form"></input>
+    <input type="hidden" name="resurved-date" value="2021-07-19" form="room07-form"></input>
+    <input type="hidden" name="resurved-date" value="2021-07-19" form="room08-form"></input>
+    <div>
+        <label for="resurved-room">予約会議室</label>
+        <span style="font-size: 14pt; font-weight: bold;">第一会議室&nbsp;</span>
+        <input type="hidden" name="resurved-room" value="1" form="nochange-form"></input>
+    </div>
+    <input type="hidden" name="resurved-room" value="1" form="room01-form"></input>
+    <input type="hidden" name="resurved-room" value="1" form="room02-form"></input>
+    <input type="hidden" name="resurved-room" value="1" form="room03-form"></input>
+    <input type="hidden" name="resurved-room" value="1" form="room04-form"></input>
+    <input type="hidden" name="resurved-room" value="1" form="room05-form"></input>
+    <input type="hidden" name="resurved-room" value="1" form="room06-form"></input>
+    <input type="hidden" name="resurved-room" value="1" form="room07-form"></input>
+    <input type="hidden" name="resurved-room" value="1" form="room08-form"></input>
+    <form method="POST" action="dummy" id="nochange-form">
+        <input type="submit" value="このまま次へ"></input>
+    </form>
+    <br/>
+    <br/>
+    <div>
+        日付／会議室を変更する場合は以下を入力してください。
+    </div>
+    <br/>
     <form method="POST" action="dummy">
         <input type="date" name="date" value="2021-07-19" required pattern="\d{4}-\d{2}-\d{2}"></input>
         <input type="submit" value="日付変更">

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>新規予約　予約内容確認</title>
+    <link rel='stylesheet' href='./style.css' />
+</head>
+
+<body>
+    博多次郎 様 ログイン中 <a href="dummy">マイページ</a> <a href="dummy">ログアウト</a><br />
+    <div style="padding-top: 18pt;padding-bottom: 4pt;">
+        <span style="font-size: 18pt;font-weight: bold;">新規予約&nbsp;予約内容確認</span>&nbsp;
+    </div>
+
+    <div>
+        <label for="date">日付</label>
+        <span style="font-size: 14pt; font-weight: bold;">2021-07-19&nbsp;</span>
+        <input type="hidden" name="date" value="2021-07-19" form="detail-form"></input>
+    </div>
+    <div>
+        <label for="room">会議室</label>
+        <span style="font-size: 14pt; font-weight: bold;">第一会議室&nbsp;</span>
+        <input type="hidden" name="room" value="1" form="detail-form"></input>
+    </div>
+    <div>
+        <label for="koma01">コマ</label>
+        <span style="font-size: 14pt; font-weight: bold;">4コマ&nbsp;(10:00-10:30, 10:30-11:00, 11:00-11:30, 11:30-12:00)&nbsp;</span>
+        <input type="hidden" name="koma01" value="5" form="detail-form"></input>
+        <input type="hidden" name="koma02" value="6" form="detail-form"></input>
+        <input type="hidden" name="koma03" value="7" form="detail-form"></input>
+        <input type="hidden" name="koma04" value="8" form="detail-form"></input>
+    </div>
+    <div>
+        <label for="meeting-name">会議名</label>
+        <span style="font-size: 14pt; font-weight: bold;">販売戦略会議</span>
+        <input type="hidden" name="meeting-name" value="販売戦略会議" form="detail-form"></input>
+    </div>
+    <br/>
+    <form method="POST" action="dummy" id="detail-form">
+        <input type="submit" value="この内容で予約する">
+        <input type="button" onclick="history.back()" value="戻る">
+    </form>
+</body>
+
+</html>

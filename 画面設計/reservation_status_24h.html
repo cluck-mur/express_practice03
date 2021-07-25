@@ -1,62 +1,60 @@
 <!DOCTYPE html>
-    <html lang="ja">
+<html lang="ja">
 
-    <head>
-        <title>予約状況　日付別12時間表</title>
-        <link rel='stylesheet' href='./style.css' />
-    </head>
+<head>
+    <title>予約状況　日付別24時間表</title>
+    <link rel='stylesheet' href='./style.css' />
+</head>
 
-    <body>
-        ゲスト 様 ようこそ <a href="dummy">ログイン</a> <a href="dummy">新規登録</a><br/>
-        予約を開始するにはログインしてください。
-        <div style="padding-top: 18pt;padding-bottom: 4pt;">
-            <span style="font-size: 18pt;font-weight: bold;">予約状況 部屋別(24時間表)</span>&nbsp;
-            <a href="dummy">日付別ページへ</a>
-        </div><br/>
+<body>
+    ゲスト 様 ようこそ <a href="dummy">ログイン</a> <a href="dummy">新規登録</a><br />
+    予約を開始するにはログインしてください。
+    <div>
+        <h1 id="system-name">会議室予約システム</h1>
+    </div>
+    <div>
         <form method="POST" action="dummy">
-            <select name="room">
-                <option value="1" selected>第一会議室</option>
-                <option value="2">第二会議室</option>
-                <option value="3">第三会議室</option>
-                <option value="4">第四会議室</option>
-                <option value="5">第五会議室</option>
-                <option value="6">第六会議室</option>
-                <option value="7">第七会議室</option>
-                <option value="8">第八会議室</option>
-            </select>
-            <br/>
-            <input type="date" name="date" value="2021-07-19" required pattern="\d{4}-\d{2}-\d{2}"></input>
-            <br/>
-            <input type="radio" name="hourstype" value="12hours">12時間表</input>
-            <input type="radio" name="hourstype" value="24hours" checked>24時間表</input>
-            <input type="submit" value="変更">
+            <span style="font-size: 18pt;font-weight: bold;">予約状況&nbsp;(24時間表)</span>&nbsp;
+            <input type="hidden" name="hourstype" value="1"></input>
+            <input type="submit" value="12時間表に変更">
         </form>
-        <br />
-        <form method="POST" action="dummy">
-        <div style="margin:0px;padding:0px;" align="center">
+    </div>
+
+    <form method="POST" action="dummy">
+        <input type="date" name="date" value="2021-07-19" required pattern="\d{4}-\d{2}-\d{2}"></input>
+        <input type="submit" value="日付変更">
+    </form>
+    <br />
+
+    <form method="POST" action="dummy">
+        <div style="margin:0px;padding:0px;">
             <table width="98%"
-                style="border-collapse: collapse;border:1px solid #000000;background-color:#FFFFFF;color:#000000;text-align:left;">
+                style="border-collapse: collapse;border:1px solid #000000;background-color:#FFFFFF;color:#000000;text-align:left; margin-left: auto;margin-right: auto;">
                 <tbody>
                     <tr>
-                        <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
+                        <th
+                            style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;width: 10pt; white-space: nowrap;">
                             開始時刻</th>
                         <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
-                            2021/07/19(月)</th>
+                            第一会議室</th>
                         <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
-                            2021/07/20(火)</th>
+                            第二会議室</th>
                         <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
-                            2021/07/21(水)</th>
+                            第三会議室</th>
                         <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
-                            2021/07/22(木)</th>
+                            第四会議室</th>
                         <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
-                            2021/07/23(金)</th>
+                            第五会議室</th>
                         <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
-                            2021/07/24(土)</th>
+                            第六会議室</th>
                         <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
-                            2021/07/25(日)</th>
+                            第七会議室</th>
+                        <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;">
+                            第八会議室</th>
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">08:00</td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -74,9 +72,11 @@
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">09:00</td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -94,10 +94,13 @@
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">10:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br/>(福岡太郎)</a></td>
+                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br />(福岡太郎)</a>
+                        </td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -107,7 +110,9 @@
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">10:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br/>(福岡太郎)</a></td>
+                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br />(福岡太郎)</a>
+                        </td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -117,7 +122,9 @@
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">11:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br/>(福岡太郎)</a></td>
+                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br />(福岡太郎)</a>
+                        </td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -127,7 +134,9 @@
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">11:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br/>(福岡太郎)</a></td>
+                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br />(福岡太郎)</a>
+                        </td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -137,6 +146,7 @@
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">12:00</td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -154,9 +164,11 @@
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">13:00</td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -174,9 +186,11 @@
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">14:00</td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -194,9 +208,11 @@
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">15:00</td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -214,9 +230,11 @@
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">16:00</td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -234,9 +252,11 @@
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">17:00</td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -254,9 +274,11 @@
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">18:00</td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -274,9 +296,11 @@
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">19:00</td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -294,9 +318,11 @@
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">20:00</td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -314,9 +340,11 @@
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">21:00</td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -334,10 +362,13 @@
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">22:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br/>(福岡太郎)</a></td>
+                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br />(福岡太郎)</a>
+                        </td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -347,7 +378,9 @@
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">22:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br/>(福岡太郎)</a></td>
+                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br />(福岡太郎)</a>
+                        </td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -357,7 +390,9 @@
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">23:00</td>
-                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br/>(福岡太郎)</a></td>
+                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br />(福岡太郎)</a>
+                        </td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -367,7 +402,9 @@
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">23:30</td>
-                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br/>(福岡太郎)</a></td>
+                        <td style="border:1px solid #000000;text-align:left;"><a href="dummy">販売戦略会議<br />(福岡太郎)</a>
+                        </td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -377,6 +414,7 @@
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">00:00</td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -394,9 +432,11 @@
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">01:00</td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -414,9 +454,11 @@
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">02:00</td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -434,9 +476,11 @@
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">03:00</td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -454,9 +498,11 @@
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">04:00</td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -474,9 +520,11 @@
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">05:00</td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -494,9 +542,11 @@
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">06:00</td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -514,9 +564,11 @@
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                     </tr>
                     <tr>
                         <td style="border:1px solid #000000;text-align:center;">07:00</td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
@@ -534,11 +586,12 @@
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
                         <td style="border:1px solid #000000;text-align:left;"></td>
+                        <td style="border:1px solid #000000;text-align:left;"></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </form>
-    </body>
+</body>
 
-    </html>
+</html>

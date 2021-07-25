@@ -7,36 +7,42 @@
 </head>
 
 <body>
-    博多次郎 様 ログイン中 <a href="dummy">マイページ</a> <a href="dummy">ログアウト</a><br />
-    <div style="padding-top: 18pt;padding-bottom: 4pt;">
+    <div>
+        博多次郎 様 ログイン中&nbsp;<a href="dummy">予約リスト</a>&nbsp;<a href="dummy">マイページ</a>&nbsp;<a href="dummy">ログアウト</a><br />
+    </div>
+    <div>
+        <h1 id="system-name">会議室予約システム</h1>
+    </div>
+    <div>
         <span style="font-size: 18pt;font-weight: bold;">新規予約&nbsp;会議名入力</span>&nbsp;
     </div>
+    <br />
 
-    <table>
+    <table class="detail-table">
         <tr>
-            <td style="width: auto; white-space: nowrap;">
+            <td class="detail-td" style="width: auto; white-space: nowrap;">
                 <label for="date">日付</label>
             </td>
-            <td>
-                <span style="font-size: 14pt; font-weight: bold;">2021-07-19&nbsp;</span>
+            <td class="detail-td" style="width: 100%;">
+                <span>2021-07-19&nbsp;</span>
                 <input type="hidden" name="date" value="2021-07-19" form="detail-form"></input>
             </td>
         </tr>
         <tr>
-            <td style="width: auto; white-space: nowrap;">
+            <td class="detail-td" style="width: auto; white-space: nowrap;">
                 <label for="room">会議室</label>
             </td>
-            <td>
-                <span style="font-size: 14pt; font-weight: bold;">第一会議室&nbsp;</span>
+            <td class="detail-td" style="width: 100%;">
+                <span>第一会議室&nbsp;</span>
                 <input type="hidden" name="room" value="1" form="detail-form"></input>
             </td>
         </tr>
         <tr>
-            <td style="width: auto; white-space: nowrap;">
+            <td class="detail-td" style="width: auto; white-space: nowrap;">
                 <label for="koma01">コマ</label>
             </td>
-            <td>
-                <span style="font-size: 14pt; font-weight: bold;">4コマ&nbsp;(10:00-10:30, 10:30-11:00, 11:00-11:30,
+            <td class="detail-td" style="width: 100%;">
+                <span>4コマ&nbsp;(10:00-10:30, 10:30-11:00, 11:00-11:30,
                     11:30-12:00)&nbsp;</span>
                 <input type="hidden" name="koma01" value="5" form="detail-form"></input>
                 <input type="hidden" name="koma02" value="6" form="detail-form"></input>
@@ -45,15 +51,15 @@
             </td>
         </tr>
         <tr>
-            <td style="width: auto; white-space: nowrap;">
+            <td class="detail-td" style="width: auto; white-space: nowrap;">
                 <label for="meeting-name">会議名</label>
             </td>
-            <td>
-                <input type="text" name="meeting-name" placeholder="会議名を入力してください" form="detail-form"></input>
+            <td class="detail-td" style="width: 100%; padding-left: 4pt;">
+                <input type="text" name="meeting-name" placeholder="会議名を入力してください" form="detail-form"
+                    style="width: 100%;"></input>
             </td>
         </tr>
     </table>
-    <br />
     <form method="POST" action="dummy" id="detail-form">
         <input type="submit" value="次へ">
         <input type="button" onclick="history.back()" value="戻る">

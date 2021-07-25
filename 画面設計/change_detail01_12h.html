@@ -7,7 +7,9 @@
 </head>
 
 <body>
-    博多次郎 様 ログイン中 <a href="dummy">マイページ</a> <a href="dummy">ログアウト</a><br />
+    <div>
+        博多次郎 様 ログイン中&nbsp;<a href="dummy">予約リスト</a>&nbsp;<a href="dummy">マイページ</a>&nbsp;<a href="dummy">ログアウト</a><br />
+    </div>
     <div style="padding-top: 18pt;padding-bottom: 4pt;">
         <form method="POST" action="dummy" id="hours-form">
             <span style="font-size: 18pt;font-weight: bold;">予約修正&nbsp;コマ選択&nbsp;(12時間表)</span>&nbsp;
@@ -15,39 +17,42 @@
             <input type="submit" value="24時間表に変更">
         </form>
     </div>
+    <br />
 
     <input type="hidden" name="meeting-code" value="1" form="hours-form">
     <input type="hidden" name="meeting-code" value="1" form="detail-form">
 
-    <table>
+    <table class="detail-table">
         <tr>
-            <td style="width: auto; white-space: nowrap;">
+            <td class="detail-td" style="width: auto; white-space: nowrap;">
                 <label for="date">日付</label>
             </td>
-            <td>
-                <span style="font-size: 14pt; font-weight: bold;">2021-07-19&nbsp;</span>
+            <td class="detail-td" style="width: 100%;">
+                <span>2021-07-19&nbsp;</span>
                 <input type="hidden" name="date" value="2021-07-19" form="detail-form"></input>
             </td>
         </tr>
         <tr>
-            <td style="width: auto; white-space: nowrap;">
+            <td class="detail-td" style="width: auto; white-space: nowrap;">
                 <label for="room">会議室</label>
             </td>
-            <td>
-                <span style="font-size: 14pt; font-weight: bold;">第一会議室&nbsp;</span>
+            <td class="detail-td" style="width: 100%;">
+                <span>第一会議室&nbsp;</span>
                 <input type="hidden" name="room" value="1" form="detail-form"></input>
             </td>
         </tr>
     </table>
     <br />
-    <div style="margin:0px;padding:0px;" align="center">
+    <div style="margin:0px;padding:0px;">
         <table width="98%"
-            style="border-collapse: collapse;border:1px solid #000000;background-color:#FFFFFF;color:#000000;text-align:left;">
+            style="border-collapse: collapse;border:1px solid #000000;background-color:#FFFFFF;color:#000000;text-align:left; margin-left: auto;margin-right: auto;">
             <tbody>
                 <tr>
-                    <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;white-space: nowrap;">
+                    <th
+                        style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;white-space: nowrap;">
                         開始時刻</th>
-                    <th style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;width:100%">
+                    <th
+                        style="border:1px solid #000000;background-color:#808080;color:#FFFFFF;text-align:center;width:100%">
                         予約したいコマをチェック
                     </th>
                 </tr>

@@ -6,3 +6,18 @@ body {
 a {
   color: #00B7FF;
 }
+
+.detail-table {
+  border-collapse: collapse;
+  border:1px solid #000000;
+}
+
+.detail-td {
+  border:1px solid black;
+  padding-left: 8pt;
+  padding-right: 8pt;
+}
+
+#system-name {
+  background-color: aquamarine;
+}
